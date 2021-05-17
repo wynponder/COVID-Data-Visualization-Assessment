@@ -17,13 +17,12 @@ h3 {
     grid-template-rows: 0.15fr 0.50fr 0.75fr 0.50fr;
 }
 
-p {
+p, ul {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 200px;
     width: auto;
 }
-
 
 .header {
     grid-column: 1 / span 3;

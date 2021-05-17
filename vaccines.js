@@ -78,15 +78,35 @@ $(document).ready(function () {
         })
 });
 
-/*$(document).ready(function () {
-    $.getJSON("https://covid-api.mmediagroup.fr/v1/cases?ab=US&status=confirmed",
+$(document).ready(function () {
+    $.getJSON("https://covid-api.mmediagroup.fr/v1/cases?country=US",
         function (data) {
-            var top5 = function sortByKeyDesc(array, confirmed) {
-                return array.sort(function (a, b) {
-                    var x = a["confirmed"]; var y = b["confirmed"];
-                    return ((x > y) ? -1 : ((x < y) ? 1 : 0));
-                });
+            const topFive = data["confirmed"];
+            var sortable = [];
+            for (var state in data) {
+                sortable.push([state, data["confirmed"]]);
             }
-            console.log(top5); 
+
+            var sort = sortable.sort(function (a, b) {
+                return a[1] - b[1];
+            })
+
+            var onlyStates = sort.splice(2);
+
+            var firstState = onlyStates[1];
+            var secondState = onlyStates[2];
+            var thirdState = onlyStates[3];
+
+            document.getElementById("firstState").innerHTML = firstState;
+            document.getElementById("secondState").innerHTML = secondState;
+            document.getElementById("thirdState").innerHTML = thirdState;
+            
+
+            n = new Date();
+            y = n.getFullYear();
+            m = n.getMonth() + 1;
+            d = n.getDate();
+            var todayDate = document.getElementById("todayDateFour").innerHTML = m + "/" + d + "/" + y;
+
         })
-});*/
+});
