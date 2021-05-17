@@ -6,22 +6,24 @@ body {
 h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 28px;
-}
-
-p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 200px;
-    width: 500px;
+    font-size: 22px;
+    width:375px;
 }
 
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1.1fr 1fr;
-    grid-template-rows: 175px 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.15fr 0.50fr 0.75fr 0.50fr;
 }
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 200px;
+    width: auto;
+}
+
 
 .header {
     grid-column: 1 / span 3;
@@ -29,7 +31,7 @@ p {
     color: rgb(1, 22, 49);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 42pt;
+    font-size: 36pt;
     width: 100%;
     text-align: center;
 }
@@ -40,20 +42,19 @@ p {
     color: rgb(1, 22, 49);
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
-    font-size: 32pt;
+    font-size: 28pt;
     width: 100%;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .data-comparison-one {
     grid-column: 1 / 1;
     grid-row: 2 / 2;
-    height: auto;
-    width: 100%;
     align-items: center;
     justify-items: center;
     display: flex;
+    width:auto;
 }
 
 .orange-virus {
@@ -73,7 +74,6 @@ p {
 .data-comparison-two {
     grid-column: 3 / 3;
     grid-row: 2 / 2;
-    height: auto;
     width: 100%;
     align-items: center;
     justify-items: center;
@@ -102,6 +102,7 @@ p {
     align-items: center;
     justify-items: center;
     display: flex;
+    width: auto;
 }
 
 .navy-virus {
@@ -143,7 +144,7 @@ p {
 }
 
 svg {
-    font-size: 52px;
+    font-size:24px;
     fill: #011631;
     font-family: 'Montserrat', sans-serif;
 }
@@ -162,19 +163,19 @@ svg {
     font-size: 1.7vmax;
     fill: #011631;
     font-family: 'Montserrat', sans-serif;
-    left:50%;
-    position:relative;
-    top:5%;
+    left: 50%;
+    position: relative;
+    top: 5%;
     bottom: 30%;
-    left:50%;
+    left: 50%;
 }
 
-/*#usa {
-    position:relative;
+#usaPeople {
+    position: relative;
     bottom: 25%;
-    top:25%;
-    left:25%;
+    top: 25%;
+    left: 25%;
     font-size: 32px;
     fill: #011631;
-    font-family: 'Montserrat', sans-serif;  
-}*/
+    font-family: 'Montserrat', sans-serif;
+}
