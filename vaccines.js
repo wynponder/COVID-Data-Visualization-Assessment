@@ -39,14 +39,9 @@ $(document).ready(function () {
 })*/
 
 
-var usVaccineData = {
-    "url": "https://covid-api.mmediagroup.fr/v1/vaccines?country=United%20States",
-    "method": "GET",
-    "timeout": 0,
-};
 
 $(document).ready(function () {
-    $.getJSON("https://covid-api.mmediagroup.fr/v1/vaccines?country=United%20States",
+    $.getJSON("https://covid-api.mmediagroup.fr/v1/vaccines?country=US",
         function (data) {
             var peopleFullyVaccinated = data["All"]["people_vaccinated"];
             document.getElementById("usaPeople").innerHTML = numberWithCommas(peopleFullyVaccinated);
@@ -61,7 +56,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $.getJSON("https://covid-api.mmediagroup.fr/v1/vaccines?country=United%20States",
+    $.getJSON("https://covid-api.mmediagroup.fr/v1/vaccines?country=US",
         function (data) {
             var partiallyVaccinated = data["All"]["people_partially_vaccinated"];
             document.getElementById("partialUS").innerHTML = numberWithCommas(partiallyVaccinated);
@@ -76,7 +71,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $.getJSON("https://covid-api.mmediagroup.fr/v1/vaccines?country=United%20States",
+    $.getJSON("https://covid-api.mmediagroup.fr/v1/vaccines?country=US",
         function (data) {
             var administeredShots = data["All"]["administered"];
             document.getElementById("admin").innerHTML = numberWithCommas(administeredShots);
