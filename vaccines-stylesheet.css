@@ -6,8 +6,8 @@ body {
 h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 22px;
-    width:375px;
+    font-size: 18px;
+    width:300px;
 }
 
 
@@ -19,9 +19,10 @@ h3 {
 
 p, ul {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 200px;
-    width: auto;
+    width: 80%;
+    height:100%;
 }
 
 .header {
@@ -30,7 +31,7 @@ p, ul {
     color: rgb(1, 22, 49);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 36pt;
+    font-size: 32pt;
     width: 100%;
     text-align: center;
 }
@@ -41,7 +42,7 @@ p, ul {
     color: rgb(1, 22, 49);
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
-    font-size: 28pt;
+    font-size: 24pt;
     width: 100%;
     text-align: center;
     margin-top: 60px;
@@ -53,7 +54,8 @@ p, ul {
     align-items: center;
     justify-items: center;
     display: flex;
-    width:auto;
+    width:100%;
+    height:100%;
 }
 
 .orange-virus {
@@ -74,6 +76,7 @@ p, ul {
     grid-column: 3 / 3;
     grid-row: 2 / 2;
     width: 100%;
+    height:100%;
     align-items: center;
     justify-items: center;
     display: flex;
@@ -96,7 +99,7 @@ p, ul {
 .data-comparison-three {
     grid-column: 1 / 1;
     grid-row: 4 / 4;
-    height: auto;
+    height: 100%;
     width: 100%;
     align-items: center;
     justify-items: center;
@@ -121,7 +124,7 @@ p, ul {
 .data-comparison-four {
     grid-column: 3 / 3;
     grid-row: 4 / 4;
-    height: auto;
+    height: 100%;
     width: 100%;
     align-items: center;
     justify-items: center;
@@ -146,13 +149,15 @@ svg {
     font-size:24px;
     fill: #011631;
     font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    justify-content:center;
 }
 
 .total-vaccines {
     grid-column: 2 / 2;
     grid-row: 3 / 3;
     width: 100%;
-    height: auto;
+    height: 100%;
     align-items: center;
     justify-items: center;
     display: flex;
@@ -160,7 +165,7 @@ svg {
 
 
 #admin {
-    font-size: 1.5vmax;
+    font-size: 1.3vmax;
     fill: #011631;
     font-family: 'Montserrat', sans-serif;
     left: 50%;
@@ -168,4 +173,6 @@ svg {
     top: 5%;
     bottom: 30%;
     left: 50%;
+    align-items: center;
+    justify-items: center;
 }
