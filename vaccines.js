@@ -9,7 +9,7 @@ function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-//Total US Cases
+//top left component - confirmed US Cases
 $(document).ready(function () {
     $.getJSON("https://covid-api.mmediagroup.fr/v1/cases?country=US",
         function (data) {
@@ -39,7 +39,7 @@ $(document).ready(function () {
 })*/
 
 
-
+//top right component - complete vaccinations
 $(document).ready(function () {
     $.getJSON("https://covid-api.mmediagroup.fr/v1/vaccines?country=US",
         function (data) {
@@ -55,6 +55,7 @@ $(document).ready(function () {
         })
 });
 
+//bottom left component - partial vaccinations
 $(document).ready(function () {
     $.getJSON("https://covid-api.mmediagroup.fr/v1/vaccines?country=US",
         function (data) {
@@ -70,6 +71,7 @@ $(document).ready(function () {
         })
 });
 
+//center component - total vaccinations: partial + complete
 $(document).ready(function () {
     $.getJSON("https://covid-api.mmediagroup.fr/v1/vaccines?country=US",
         function (data) {
@@ -78,6 +80,7 @@ $(document).ready(function () {
         })
 });
 
+//bottom right component - top three states
 $(document).ready(function () {
     $.getJSON("https://covid-api.mmediagroup.fr/v1/cases?country=US",
         function (data) {
@@ -100,7 +103,7 @@ $(document).ready(function () {
             document.getElementById("firstState").innerHTML = firstState;
             document.getElementById("secondState").innerHTML = secondState;
             document.getElementById("thirdState").innerHTML = thirdState;
-            
+
 
             n = new Date();
             y = n.getFullYear();
