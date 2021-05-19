@@ -159,8 +159,9 @@ svg {
     display: flex;
 }
 
+
 #admin {
-    font-size: 1.7vmax;
+    font-size: 1.5vmax;
     fill: #011631;
     font-family: 'Montserrat', sans-serif;
     left: 50%;
@@ -168,14 +169,4 @@ svg {
     top: 5%;
     bottom: 30%;
     left: 50%;
-}
-
-#usaPeople {
-    position: relative;
-    bottom: 25%;
-    top: 25%;
-    left: 25%;
-    font-size: 32px;
-    fill: #011631;
-    font-family: 'Montserrat', sans-serif;
 }
